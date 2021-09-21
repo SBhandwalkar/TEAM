@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-15T15:02:49 IST" name="Default suite" finished-at="2021-09-15T15:02:58 IST" duration-ms="9238">
+    <groups>
+    </groups>
+    <test started-at="2021-09-15T15:02:49 IST" name="Default test" finished-at="2021-09-15T15:02:58 IST" duration-ms="9238">
+      <class name="testcasesAPI.CreateCasesTest">
+        <test-method signature="getCRnumber()[pri:0, instance:testcasesAPI.CreateCasesTest@3646a422]" started-at="2021-09-15T15:02:49 IST" name="getCRnumber" finished-at="2021-09-15T15:02:58 IST" duration-ms="9142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCRnumber -->
+      </class> <!-- testcasesAPI.CreateCasesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

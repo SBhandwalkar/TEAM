@@ -1,0 +1,896 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Maven Cucumber Framework</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Health Check Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 28, 2021 01:39:29 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HealthCheck Folders</p>
+            <p class="text-sm">
+              <span>13:39:37 PM</span> / <span>00:03:52:274</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HealthCheck Folders</h5>
+<span class='badge badge-success'>06.28.2021 13:39:37</span>
+<span class='badge badge-danger'>06.28.2021 13:43:29</span>
+<span class='badge badge-default'>00:03:52:274</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:39:40 PM</td>
+        <td>
+          latest Logs present  : EmailToFolderService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:39:40 PM</td>
+        <td>
+          No latest Logs present  : FreeFormToCARMAService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:39:43 PM</td>
+        <td>
+          No latest Logs present  : FreeForms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:43:29 PM</td>
+        <td>
+          No latest Logs present  : Captiva
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:43:29 PM</td>
+        <td>
+          latest Logs present  : OldMutualEmailToFolderService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:43:29 PM</td>
+        <td>
+          There is issue with one of the Log file
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HealthCheck SQLDatabase Check</p>
+            <p class="text-sm">
+              <span>13:43:31 PM</span> / <span>00:00:43:964</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HealthCheck SQLDatabase Check</h5>
+<span class='badge badge-success'>06.28.2021 13:43:31</span>
+<span class='badge badge-danger'>06.28.2021 13:44:15</span>
+<span class='badge badge-default'>00:00:43:964</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:43:46 PM</td>
+        <td>
+          Database failed  :  last create
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:00 PM</td>
+        <td>
+          Database failed  :  retry asynch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:15 PM</td>
+        <td>
+          Database failed  :  GCS Val errors
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:15 PM</td>
+        <td>
+          There is issue with one of the database
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HealthCheck SQLDatabase Stored Procedure Check</p>
+            <p class="text-sm">
+              <span>13:44:15 PM</span> / <span>00:02:10:091</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HealthCheck SQLDatabase Stored Procedure Check</h5>
+<span class='badge badge-success'>06.28.2021 13:44:15</span>
+<span class='badge badge-danger'>06.28.2021 13:46:25</span>
+<span class='badge badge-default'>00:02:10:091</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:29 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getBizagiData4Prognosis_Tech_Replication
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:44 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getMostRecentRecord
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:44:58 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getSQLAgentJobStatus
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:45:12 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getHAStatus
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:45:27 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getLongRunningQueries
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:45:41 PM</td>
+        <td>
+          Stored Procedure Failed:  pr_BlockingActivity
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:45:56 PM</td>
+        <td>
+          Stored Procedure Failed:  OMSP_getLongRunningQueries
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:46:11 PM</td>
+        <td>
+          Stored Procedure Failed:  pr_GetSchedulerInfo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:46:25 PM</td>
+        <td>
+          Stored Procedure Failed:  pr_CheckServerTime
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:46:25 PM</td>
+        <td>
+          There is issue with one of the Stored Procedure
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HealthCheck Urls</p>
+            <p class="text-sm">
+              <span>13:46:25 PM</span> / <span>00:00:29:561</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HealthCheck Urls</h5>
+<span class='badge badge-success'>06.28.2021 13:46:25</span>
+<span class='badge badge-danger'>06.28.2021 13:46:55</span>
+<span class='badge badge-default'>00:00:29:561</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:31 PM</td>
+        <td>
+          http://10.128.122.5/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:32 PM</td>
+        <td>
+          http://10.128.122.58/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:33 PM</td>
+        <td>
+          http://10.128.122.4/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:34 PM</td>
+        <td>
+          http://10.128.122.9/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:35 PM</td>
+        <td>
+          http://10.128.122.8/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:36 PM</td>
+        <td>
+          http://10.128.122.118/CIT_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:37 PM</td>
+        <td>
+          http://leg.intranet/Leg_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:37 PM</td>
+        <td>
+          http://10.128.122.15/LEG_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:37 PM</td>
+        <td>
+          http://10.128.122.93/LEG_Bizagi/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:37 PM</td>
+        <td>
+          http://gcswcfhost.intranet:9062/Gcs.WcfServices.Services/SearchService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:38 PM</td>
+        <td>
+          http://omrdb2v01:7090/CITServices.Summit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:38 PM</td>
+        <td>
+          http://omrdb2v01:7090/CITServices.Summit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:39 PM</td>
+        <td>
+          http://omrdb2v01:7090/CITServices.Summit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:39 PM</td>
+        <td>
+          http://omrdb2v01:7090/CITServices.Summit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:40 PM</td>
+        <td>
+          http://cit.intranet/CIT.Integration/Services/Consumer/Summit.asmx
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:40 PM</td>
+        <td>
+          http://cit.intranet/CIT.Integration/Services/Consumer/Summit.asmx
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:41 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.ReceiverChannel/AdhocChannelService.svc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:41 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.Prerequisite/PrerequisiteService.svc?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:41 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.Query/QueryService.svc?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:42 PM</td>
+        <td>
+          http://documentumservices.intranet:8000/DocumentumServices/WebServices?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:42 PM</td>
+        <td>
+          http://omrdb2v02:7080/CustomerEngagementNPSService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:43 PM</td>
+        <td>
+          http://omfsbat01/Xiriuz/services/ClientServiceExternalFeedbackService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:43 PM</td>
+        <td>
+          http://omrdb2v01:7090/PartyInfoService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:43 PM</td>
+        <td>
+          http://omrdb2v01:7090/cashbackinfoservice?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:44 PM</td>
+        <td>
+          http://omrdb2v02:7080/CSIService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:44 PM</td>
+        <td>
+          http://omrdb2v01:7090/GcsCitUpdateService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:45 PM</td>
+        <td>
+          http://omrdb2v01:7090/GcsCitValidationService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:45 PM</td>
+        <td>
+          http://omrdb2v02:7080/BankAccCheckDigitVerfication?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:45 PM</td>
+        <td>
+          http://omrdb2v02:7080/moneyoutbankinfoserviceV2?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:46 PM</td>
+        <td>
+          http://omrdb2v01:7090/DisinvestmentService?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:46 PM</td>
+        <td>
+          http://omrdb2v01:7090/partwithdrawalservice?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:46 PM</td>
+        <td>
+          http://omrdb2v02:7080/OMFMoneyAccountServiceV2?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:47 PM</td>
+        <td>
+          http://omrdb2v01:7090/premiumholidayinfoservice?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:47 PM</td>
+        <td>
+          http://omrdb2v02:7080/rmm/deathvalues?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:47 PM</td>
+        <td>
+          http://omrdb2v02:7080/Intermediary360Service
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:48 PM</td>
+        <td>
+          http://omrdb2v02:7080/CorporateServices/CorporateSchemeService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:48 PM</td>
+        <td>
+          http://omrdb2v02:7810/cit360service?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://omrdb2v02:7080/RMMClaimsServiceV2?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.ReceiverChannel/AdhocChannelService.svc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.Asset/MaintenanceService.svc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.Prerequisite/PrerequisiteService.svc?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://carma-cit.intranet/DigitalAssetRepository/EP.Query/QueryService.svc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:49 PM</td>
+        <td>
+          http://omrdb2v02:7080/CorporateServices/CorporateSchemeService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:50 PM</td>
+        <td>
+          http://omrdb2v02:7080/CorporateMiscContactService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:50 PM</td>
+        <td>
+          http://omrdb2v02:7080/CorporateServices/CorporateSchemeService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:50 PM</td>
+        <td>
+          http://OMRDB2V01:7090/customerinfoservice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:51 PM</td>
+        <td>
+          http://omrdb2v02:7080/corporate/reports/ReportsService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:51 PM</td>
+        <td>
+          http://omrdb2v02:7820/BizagiGetImedAccreditation?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:51 PM</td>
+        <td>
+          http://omrdb2v02:7080/IOISService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:52 PM</td>
+        <td>
+          http://omrdb2v01:7090/memberquoteservice?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:52 PM</td>
+        <td>
+          http://omrdb2v02:7080/CustomerEngagementNPSService
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:52 PM</td>
+        <td>
+          http://cit.intranet/getwork
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:53 PM</td>
+        <td>
+          http://omrwebappv01:9019/ws/mySeries/Services/SMS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:53 PM</td>
+        <td>
+          http://cit.intranet/cit.integration/services/Internal/Internal.asmx
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:53 PM</td>
+        <td>
+          http://omdmwr021:7802/reassignmentservice?wsdl
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:54 PM</td>
+        <td>
+          http://imagerender1/ImageRender/ImageRenderService.asmx
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:54 PM</td>
+        <td>
+          http://bpmemail.intranet/EmailHandlerService.asmx
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:55 PM</td>
+        <td>
+          http://documentumservices.intranet:8000/DocumentumServices/WebServices
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:46:55 PM</td>
+        <td>
+          http://omrdb2v02:7080/citmailnotificationservice
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:46:55 PM</td>
+        <td>
+          http://cit.intranet/CIT_Bizagi/jquery/webparts/desktop/portal/pages/webpart.htm?type=activityForm
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:46:55 PM</td>
+        <td>
+          All urls not working fine
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 28, 2021 01:39:29 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 28, 2021 01:46:55 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>61</b> events passed</small></div>
+<div>
+<small data-tooltip='24%'><b>20</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"HealthCheck Folders":232.274,"HealthCheck SQLDatabase Check":43.964,"HealthCheck SQLDatabase Stored Procedure Check":130.091,"HealthCheck Urls":29.561
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 61,
+failEvents: 20,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
